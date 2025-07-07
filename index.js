@@ -1,13 +1,9 @@
-import express from "express";
+import fs from 'fs';
 
-const app = express();
+let unusedVar = 42
 
-app.use(express.json());
+const readData = () => {
+  console.log("Reading data");
+}
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+readData()
